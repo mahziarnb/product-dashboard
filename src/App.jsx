@@ -1,4 +1,4 @@
-import ProductItem from './components/main/Product-item'
+import ProductList from './components/main/Product-list'
 
 function App() {
 const products = [
@@ -111,15 +111,7 @@ return(
 
 
             {/* {Product List} */}
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-
-                {
-                    products.map(product => {
-                      return <ProductItem key={product.id} product={product}/>
-                    })
-                }
-
-            </div>
+            <ProductList products={products} />
 
           </section>
 
