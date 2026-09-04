@@ -1,6 +1,5 @@
 
 export default function ProductItem({product}) {
-    console.log(product)
     return(
             <article className="bg-white rounded-xl shadow-sm p-5">
 

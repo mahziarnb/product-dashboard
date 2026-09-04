@@ -1,4 +1,5 @@
 import ProductList from './components/main/Product-list'
+import Sidebar from './components/main/Sidebar'
 
 function App() {
 const products = [
@@ -26,24 +27,24 @@ const products = [
 ]
 
 return(
-    <div class="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
 
       {/* {Header} */}
-      <header class="bg-white border-b">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <header className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
           <div>
-            <h1 class="text-2xl font-bold text-gray-900">
+            <h1 className="text-2xl font-bold text-gray-900">
               Product Dashboard
             </h1>
 
-            <p class="text-sm text-gray-500">
+            <p className="text-sm text-gray-500">
               Manage your products
             </p>
           </div>
 
           <button
-            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
           >
             Add Product
           </button>
@@ -53,57 +54,29 @@ return(
 
 
       {/* {Main} */}
-      <main class="flex-1 max-w-7xl w-full mx-auto px-6 py-8">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-6 py-8">
 
-        <div class="flex gap-8">
+        <div className="flex gap-8">
 
           {/* {Sidebar} */}
-          <aside class="w-56 bg-white rounded-xl shadow-sm p-4 h-fit">
-
-            <nav class="space-y-2">
-
-              <a
-                href="#"
-                class="block px-4 py-3 rounded-lg bg-blue-50 text-blue-600 font-medium"
-              >
-                Home
-              </a>
-
-              <a
-                href="#"
-                class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100"
-              >
-                Products
-              </a>
-
-              <a
-                href="#"
-                class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100"
-              >
-                Settings
-              </a>
-
-            </nav>
-
-          </aside>
-
+          <Sidebar />
 
         {/* {Products Section} */}
-          <section class="flex-1">
+          <section className="flex-1">
 
-            <div class="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-6">
 
               <div>
-                <h2 class="text-xl font-bold text-gray-900">
+                <h2 className="text-xl font-bold text-gray-900">
                   Products
                 </h2>
 
-                <p class="text-sm text-gray-500">
+                <p className="text-sm text-gray-500">
                   Manage your products
                 </p>
               </div>
 
-              <span class="text-sm text-gray-500">
+              <span className="text-sm text-gray-500">
                 3 Products
               </span>
 
@@ -121,9 +94,9 @@ return(
 
 
       {/* {footer} */}
-      <footer class="bg-white border-t">
+      <footer className="bg-white border-t">
 
-        <div class="max-w-7xl mx-auto px-6 py-5 text-center text-sm text-gray-500">
+        <div className="max-w-7xl mx-auto px-6 py-5 text-center text-sm text-gray-500">
           © 2026 Product Dashboard. All rights reserved.
         </div>
 
