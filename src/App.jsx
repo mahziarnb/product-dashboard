@@ -1,3 +1,5 @@
+import Footer from './components/footer/footer'
+import Header from './components/header/Header'
 import ProductList from './components/main/Product-list'
 import Sidebar from './components/main/Sidebar'
 
@@ -29,39 +31,19 @@ const products = [
 return(
     <div className="min-h-screen flex flex-col">
 
-      {/* {Header} */}
-      <header className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900">
-              Product Dashboard
-            </h1>
-
-            <p className="text-sm text-gray-500">
-              Manage your products
-            </p>
-          </div>
-
-          <button
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-          >
-            Add Product
-          </button>
-
-        </div>
-      </header>
+      {/* Header */}
+      <Header />
 
 
-      {/* {Main} */}
+      {/* Main */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-6 py-8">
 
         <div className="flex gap-8">
 
-          {/* {Sidebar} */}
+          {/* Sidebar */}
           <Sidebar />
 
-        {/* {Products Section} */}
+        {/* Products Section */}
           <section className="flex-1">
 
             <div className="flex items-center justify-between mb-6">
@@ -83,7 +65,7 @@ return(
             </div>
 
 
-            {/* {Product List} */}
+            {/* Product List */}
             <ProductList products={products} />
 
           </section>
@@ -93,14 +75,8 @@ return(
       </main>
 
 
-      {/* {footer} */}
-      <footer className="bg-white border-t">
-
-        <div className="max-w-7xl mx-auto px-6 py-5 text-center text-sm text-gray-500">
-          © 2026 Product Dashboard. All rights reserved.
-        </div>
-
-      </footer>
+      {/* footer */}
+      <Footer />
 
     </div>
 )
